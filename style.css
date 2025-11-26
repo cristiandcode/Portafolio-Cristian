@@ -268,96 +268,209 @@ html{
     right: -15px;
     font-size: 14px;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
+/* JAVASCRIPT */
+.skills .skill .javascript {
     width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 100%;}
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
 
-.skills .skill .htmlcss{
+/* TAILWIND */
+.skills .skill .tailwind {
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s tailwind forwards;
 }
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 100%;}
+@keyframes tailwind {
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
 
-.skills .skill .react{
+/* REACT */
+.skills .skill .react {
     width: 0%;
     animation: 2s react forwards;
 }
 @keyframes react {
-    0%{width: 0%;}
-    100%{width: 98%;}
+    0% { width: 0%; }
+    100% { width: 98%; }
 }
 
-.skills .skill .wordpress{
+/* PHP */
+.skills .skill .php {
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s php forwards;
 }
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 80%;}
+@keyframes php {
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
 
-.skills .skill .node{
+/* NODEJS */
+.skills .skill .node {
     width: 0%;
     animation: 2s node forwards;
 }
 @keyframes node {
-    0%{width: 0%;}
-    100%{width: 98%;}
+    0% { width: 0%; }
+    100% { width: 98%; }
 }
 
-.skills .skill .comunicacion{
+/* PYTHON */
+.skills .skill .python {
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+
+/* TYPESCRIPT */
+.skills .skill .typescript {
+    width: 0%;
+    animation: 2s typescript forwards;
+}
+@keyframes typescript {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+/* SQL / NOSQL */
+.skills .skill .basesdatos {
+    width: 0%;
+    animation: 2s basesdatos forwards;
+}
+@keyframes basesdatos {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+
+/* NEXT.JS */
+.skills .skill .nextjs {
+    width: 0%;
+    animation: 2s nextjs forwards;
+}
+@keyframes nextjs {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+/* NEST.JS */
+.skills .skill .nestjs {
+    width: 0%;
+    animation: 2s nestjs forwards;
+}
+@keyframes nestjs {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+
+/* PROFESIONALES */
+
+/* COMUNICACIÓN */
+.skills .skill .comunicacion {
     width: 0%;
     animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 100%;}
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
 
-.skills .skill .trabajo{
+/* TRABAJO EN EQUIPO */
+.skills .skill .trabajo {
     width: 0%;
     animation: 2s trabajo forwards;
 }
 @keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 100%;}
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
 
-.skills .skill .creatividad{
+/* CREATIVIDAD */
+.skills .skill .creatividad {
     width: 0%;
     animation: 2s creatividad forwards;
 }
 @keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
 
-.skills .skill .dedicacion{
+/* DEDICACIÓN */
+.skills .skill .dedicacion {
     width: 0%;
     animation: 2s dedicacion forwards;
 }
 @keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 100%;}
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
 
-.skills .skill .proyect{
+/* PROJECT MANAGEMENT */
+.skills .skill .proyect {
     width: 0%;
     animation: 2s proyect forwards;
 }
 @keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 95%;}
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
+
+/* RESOLUCIÓN DE PROBLEMAS */
+.skills .skill .resolucion {
+    width: 0%;
+    animation: 2s resolucion forwards;
+}
+@keyframes resolucion {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* ADAPTABILIDAD */
+.skills .skill .adaptabilidad {
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+
+/* GESTIÓN DEL TIEMPO */
+.skills .skill .tiempo {
+    width: 0%;
+    animation: 2s tiempo forwards;
+}
+@keyframes tiempo {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+
+/* LIDERAZGO */
+.skills .skill .liderazgo {
+    width: 0%;
+    animation: 2s liderazgo forwards;
+}
+@keyframes liderazgo {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+
+/* PENSAMIENTO CRÍTICO */
+.skills .skill .pensamiento {
+    width: 0%;
+    animation: 2s pensamiento forwards;
+}
+@keyframes pensamiento {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+
+
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
