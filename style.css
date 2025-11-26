@@ -227,6 +227,9 @@ a {
     margin: 15px 0;
     padding: 5px 0;
     border-bottom: 1px dashed #333;
+    /* Para el responsive: Hacemos el li un contenedor flexible */
+    display: flex;
+    flex-wrap: nowrap;
 }
 .sobremi .fila .col ul li:last-child {
     border-bottom: none;
@@ -234,8 +237,11 @@ a {
 .sobremi .fila .col ul li strong {
     display: inline-block;
     color: var(--color-acento);
-    width: 150px;
+    /* ANCHO FIJO (Solo en desktop) */
+    width: 150px; 
     font-weight: 600;
+    /* Para desktop, aseguramos que la etiqueta no envuelva */
+    flex-shrink: 0; 
 }
 .sobremi .fila .col ul li span {
     background-color: var(--color-acento);
@@ -244,6 +250,8 @@ a {
     font-weight: 600;
     border-radius: 5px;
     font-size: 14px;
+    /* Permitir que el texto del valor ocupe el espacio restante */
+    flex-grow: 1; 
 }
 .sobremi .fila .col .contenedor-intereses {
     display: flex;
@@ -565,7 +573,7 @@ a {
 
 
 /* ===========================
-   6. SECCIÓN PORTFOLIO (Personalizada)
+   6. SECCIÓN PORTFOLIO
    =========================== */
 .portfolio {
     background-color: var(--color-fondo-seccion);
@@ -589,8 +597,8 @@ a {
 .galeria {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permitir envolver en caso de múltiples proyectos o responsive */
-    gap: 30px; /* Separación entre proyectos */
+    flex-wrap: wrap; 
+    gap: 30px; 
 }
 
 /* TARJETA PROFESIONAL */
@@ -598,7 +606,6 @@ a {
     background: var(--color-fondo-oscuro);
     border-radius: 18px;
     overflow: hidden;
-    /* TAMAÑO PERSONALIZADO */
     max-width: 850px; 
     width: 100%; 
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
@@ -607,15 +614,12 @@ a {
 }
 
 .proyecto-card:hover {
-    /* EFECTO HOVER PERSONALIZADO */
     transform: translateY(-10px); 
-    /* Sombra blanca/gris sutil como solicitaste, pero ligeramente ajustada al fondo oscuro */
     box-shadow: 0 0 40px rgba(255, 255, 255, 0.15); 
 }
 
 .proyecto-card img {
     width: 100%;
-    /* ALTURA PERSONALIZADA */
     height: 350px; 
     object-fit: cover;
 }
@@ -627,7 +631,7 @@ a {
 .proyecto-info h3 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: var(--color-acento); /* Color Trébol Tech */
+    color: var(--color-acento); 
 }
 
 .proyecto-info p {
@@ -1040,6 +1044,22 @@ footer .copy strong {
         width: 100%;
         padding: 0 10px;
     }
+    /* CORRECCIÓN: Evitar que los labels fijos rompan el texto del valor */
+    .sobremi .fila .col ul li {
+        /* Hacemos el contenedor flexible en móviles */
+        flex-wrap: wrap; 
+    }
+    .sobremi .fila .col ul li strong {
+        /* El label ocupa el 100% del ancho o un ancho mínimo para apilarse */
+        width: 100%; 
+        display: block;
+        margin-bottom: 5px; /* Pequeña separación del valor */
+    }
+    .sobremi .fila .col ul li span {
+        /* Permitir que el valor ocupe el 100% de la línea siguiente */
+        width: 100%; 
+    }
+
 
     /* Skills */
     .skills .fila {
@@ -1089,12 +1109,12 @@ footer .copy strong {
         padding: 0 10px;
     }
     .proyecto-card {
-        max-width: 100%; /* El max-width se ajusta al 100% en móvil */
+        max-width: 100%; 
         margin-bottom: 30px;
     }
     .proyecto-card img {
-        height: auto; /* Permite que la imagen se adapte mejor en móvil */
-        min-height: 200px; /* Evita que la imagen sea muy pequeña */
+        height: auto; 
+        min-height: 200px;
     }
 
     /* Contacto */
