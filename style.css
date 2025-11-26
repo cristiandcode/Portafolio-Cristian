@@ -227,7 +227,6 @@ a {
     margin: 15px 0;
     padding: 5px 0;
     border-bottom: 1px dashed #333;
-    /* Para el responsive: Hacemos el li un contenedor flexible */
     display: flex;
     flex-wrap: nowrap;
 }
@@ -250,8 +249,10 @@ a {
     font-weight: 600;
     border-radius: 5px;
     font-size: 14px;
-    /* Permitir que el texto del valor ocupe el espacio restante */
-    flex-grow: 1; 
+    /* AJUSTE CLAVE: El span se ajusta al contenido en desktop */
+    display: inline-block;
+    flex-grow: 0; 
+    width: auto;
 }
 .sobremi .fila .col .contenedor-intereses {
     display: flex;
@@ -293,6 +294,43 @@ a {
 .sobremi .fila .col .contenedor-intereses .interes:hover span {
     color: var(--color-fondo-oscuro);
 }
+
+/* Botón de CV (Si no lo tienes ya en otra parte de tu código) */
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-acento);
+    width: fit-content;
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: var(--color-texto-claro);
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-acento);
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+.sobremi button:hover {
+    color: var(--color-fondo-oscuro);
+    box-shadow: 0 0 15px rgba(0, 191, 99, 0.5); 
+}
+
 
 /* Botón de CV */
 .sobremi button {
@@ -1059,6 +1097,22 @@ footer .copy strong {
         /* Permitir que el valor ocupe el 100% de la línea siguiente */
         width: 100%; 
     }
+    @media screen and (max-width: 700px) {
+    /* ... otros estilos responsive ... */
+    
+    .sobremi .fila .col ul li strong {
+        width: 100%; 
+        display: block;
+        margin-bottom: 5px; 
+    }
+    .sobremi .fila .col ul li span {
+        /* ESTO ES LO QUE NECESITAS EN EL MEDIA QUERY */
+        display: inline-block; 
+        width: auto; 
+    }
+    
+    /* ... el resto de tus estilos responsive ... */
+}
 
 
     /* Skills */
