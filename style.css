@@ -462,6 +462,9 @@ a {
 @keyframes nextjs { 0% { width: 0%; } 100% { width: 90%; } }
 .skills .skill .nestjs { width: 0%; animation: 2s nestjs forwards; }
 @keyframes nestjs { 0% { width: 0%; } 100% { width: 80%; } }
+.skills .skill .soporteit { width: 0%; animation: 2s soporteit forwards; }
+@keyframes soporteit { 0% { width: 0%; } 100% { width: 100%; } }
+
 
 /* Animaciones Profesionales */
 .skills .skill .comunicacion { width: 0%; animation: 2s comunicacion forwards; }
@@ -484,6 +487,8 @@ a {
 @keyframes liderazgo { 0% { width: 0%; } 100% { width: 90%; } }
 .skills .skill .pensamiento { width: 0%; animation: 2s pensamiento forwards; }
 @keyframes pensamiento { 0% { width: 0%; } 100% { width: 95%; } }
+.skills .skill .orientacioncliente { width: 0%; animation: 2s orientacioncliente forwards; }
+@keyframes orientacioncliente { 0% { width: 0%; } 100% { width: 100%; } }
 
 
 /* ===========================
